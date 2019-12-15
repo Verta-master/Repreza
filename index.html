@@ -230,7 +230,7 @@
         <p class="title-2">Подробнее о программе:</p>
         <ul class="lesson__list">
           <li class="lesson__item">
-            <button type="button" class="lesson__btn">1 тема:  Знакомство с Powerpoint</button>
+            <button type="button" class="lesson__btn">1 тема: <b>Знакомство с Powerpoint</b></button>
             <ul class="lesson__sublist">
               <li class="lesson__subitem"><p>урок 1: знакомство с мастер слайдом</p></li>
               <li class="lesson__subitem"><p>урок 2: Поиск креативного решения для вашей презентации</p></li>
@@ -243,7 +243,7 @@
             </ul>
           </li>
           <li class="lesson__item">
-            <button type="button" class="lesson__btn">2 тема:  Единая стилистика презентации</button>
+            <button type="button" class="lesson__btn">2 тема: <b>Единая стилистика презентации</b></button>
             <ul class="lesson__sublist">
               <li class="lesson__subitem"><p>урок 1: знакомство с мастер слайдом</p></li>
               <li class="lesson__subitem"><p>урок 2: Поиск креативного решения для вашей презентации</p></li>
@@ -251,7 +251,7 @@
             </ul>
           </li>
           <li class="lesson__item">
-            <button type="button" class="lesson__btn">3 тема: Рисуем слайды часть 1</button>
+            <button type="button" class="lesson__btn">3 тема: <b>Рисуем слайды часть 1</b></button>
             <ul class="lesson__sublist">
               <li class="lesson__subitem"><p>урок 1: знакомство с мастер слайдом</p></li>
               <li class="lesson__subitem"><p>урок 2: Поиск креативного решения для вашей презентации</p></li>
@@ -259,7 +259,7 @@
             </ul>
           </li>
           <li class="lesson__item">
-            <button type="button" class="lesson__btn">4 тема: Рисуем слайды часть 2</button>
+            <button type="button" class="lesson__btn">4 тема: <b>Рисуем слайды часть 2</b></button>
             <ul class="lesson__sublist">
               <li class="lesson__subitem"><p>урок 1: знакомство с мастер слайдом</p></li>
               <li class="lesson__subitem"><p>урок 2: Поиск креативного решения для вашей презентации</p></li>
@@ -267,7 +267,7 @@
             </ul>
           </li>
           <li class="lesson__item">
-            <button type="button" class="lesson__btn">5 тема: Моушн дизайн в Поверпоинте</button>
+            <button type="button" class="lesson__btn">5 тема: <b>Моушн дизайн в Поверпоинте</b></button>
             <ul class="lesson__sublist">
               <li class="lesson__subitem"><p>урок 1: знакомство с мастер слайдом</p></li>
               <li class="lesson__subitem"><p>урок 2: Поиск креативного решения для вашей презентации</p></li>
@@ -278,7 +278,7 @@
       </div>
     </section>
     
-    <section class="icons">
+    <section class="icons icons--white">
       <div class="wrapper">
         <p class="title-2">Что вы получите:</p>
         <ul class="icons__list">
@@ -323,7 +323,7 @@
           <input type="text" class="order__input" placeholder="Имя и Фамилия">
           <input type="email" class="order__input" placeholder="Электронная почта">
           <input type="tel" class="order__input" placeholder="Телефон">
-          <button type="submit" class="btn">ЗАПИСАТЬСЯ НА КУРС</button>
+          <button type="submit" class="btn order__btn">ЗАПИСАТЬСЯ НА КУРС</button>
         </form>
       </div>
       
@@ -369,6 +369,14 @@
       },
       preventClicks: false,
       preventClicksPropagation: false,
+    });
+  </script>
+  
+  <!-- Lessons -->
+  <script>
+    $('.lesson__btn').click(function() {
+      $(this).next().slideToggle();
+      $(this).toggleClass('lesson__btn--opened');
     });
   </script>
 </body>

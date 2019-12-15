@@ -1,0 +1,54 @@
+.lesson {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: #eff7fa;
+}
+
+.lesson__list {
+  .reset();
+  list-style: none;
+}
+
+.lesson__item {
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.lesson__btn {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 20px 30px;
+  font-size: 24px;
+  text-align: left;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    width: 9px;
+    height: 17px;
+    background-image: url(../img/icons/next.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    .transition();
+  }
+  
+  &--opened::after {
+    transform: rotate(90deg);
+    .transition();
+  }
+}
+
+.lesson__sublist {
+  display: none;
+  .reset();
+  list-style: none;
+  padding: 0 30px;
+  padding-bottom: 20px;
+}
+
+.lesson__subitem {
+  margin-bottom: 15px;
+}
