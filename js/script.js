@@ -19,3 +19,11 @@ $('.lesson__btn').click(function() {
   $(this).next().slideToggle();
   $(this).toggleClass('lesson__btn--opened');
 });
+
+//scroll to arrow anchors
+$('.nav__item a').click(function() {
+  event.preventDefault();
+  var id  = $(this).attr('href');
+  var top = $(id).offset().top;
+  $('body, html').animate({scrollTop: top}, 500);
+});
