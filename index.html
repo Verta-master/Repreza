@@ -188,10 +188,14 @@
             <div class="swiper-container author__slider">
               <div class="swiper-wrapper">
                 <div class="swiper-slide author__slide">
-                  <img src="img/images/img-1.jpg" alt="РАБОТЫ АВТОРА">
+                  <a data-fancybox="gallery" href="img/images/img-1.jpg">
+                    <img src="img/images/img-1.jpg" alt="РАБОТЫ АВТОРА">
+                  </a>
                 </div>
                 <div class="swiper-slide author__slide">
-                  <img src="img/images/img-2.jpg" alt="РАБОТЫ АВТОРА">
+                  <a data-fancybox="gallery" href="img/images/img-2.jpg">
+                    <img src="img/images/img-2.jpg" alt="РАБОТЫ АВТОРА">
+                  </a>
                 </div>
               </div>
               <div class="swiper-pagination author__pagination"></div>
@@ -359,25 +363,6 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
-
-  <!-- Slider -->
-  <script>
-    var mySwiper = new Swiper ('.author__slider', {
-      pagination: {
-        el: '.author__pagination',
-        clickable: true,
-      },
-      preventClicks: false,
-      preventClicksPropagation: false,
-    });
-  </script>
-  
-  <!-- Lessons -->
-  <script>
-    $('.lesson__btn').click(function() {
-      $(this).next().slideToggle();
-      $(this).toggleClass('lesson__btn--opened');
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>

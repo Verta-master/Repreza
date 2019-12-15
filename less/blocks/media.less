@@ -1,0 +1,238 @@
+@media (max-width: 1830px) {
+  .icons__item {
+    margin-right: 45px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .author__slide a img {
+    height: 100%;
+    width: auto;
+    max-width: none;
+  }
+}
+
+@media (max-width: 1400px) {
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .social {
+    width: 380px;
+    min-height: 500px;
+  }
+  .order__form {
+    width: ~"calc(100% - 410px)";
+  }
+  .icons__item {
+    width: 20%;
+  }
+  .promo {
+    padding-top: 30px;
+  }
+  .promo__video {
+    width: 400px;
+    max-width: 100%;
+  }
+  .promo__info {
+    width: ~"calc(100% - 430px)";
+  }
+  .nav {
+    margin-bottom: 70px;
+  }
+  .menu {
+    padding-top: 10px;
+  }
+  .logo {
+    margin-bottom: 70px;
+  }
+  .study__item {
+    height: 300px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .promo__wrap {
+    display: block;
+  }
+  .author__projects,
+  .promo__info {
+    width: 100%;
+  }
+  .promo__video {
+    width: 100%;
+    margin-top: 30px;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .icons__item {
+    width: 40%;
+  }
+  .study__item {
+    height: 230px;
+  }
+  .study__title {
+    padding: 20px;
+    font-size: 20px;
+  }
+  .author__wrap {
+    flex-wrap: wrap;
+  }
+  .author__info,
+  .author__img {
+    width: 50%;
+  }
+  .author__slide a img,
+  .author__img img {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+  }
+  .author__btn {
+    left: 0;
+  }
+  .order {
+    padding: 20px;
+  }
+  .order__form {
+    width: 400px;
+    max-width: 100%;
+  }
+  .social {
+    position: static;
+    width: 100%;
+    min-height: auto;
+    margin-top: 30px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 1022px) {
+  main {
+    padding-left: 0;
+  }
+  .menu {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &--opened .menu__btn {
+      background-image: url(../img/icons/cross.svg);
+    }
+  }
+  .logo {
+    .reset();
+  }
+  .menu__btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icons/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .menu__list {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(28, 28, 28);
+  }
+}
+
+@media (max-width: 766px) {
+  .nav__item {
+    margin-right: 20px;
+    font-size: 14px;
+  }
+  .title-1, h1 {
+    font-size: 36px;
+  }
+  .title-2, h2 {
+    font-size: 30px;
+  }
+  .promo__list {
+    display: block;
+  }
+  .promo__video a {
+    height: 300px;
+  }
+  .study__item,
+  .icons__item {
+    width: 100%;
+    margin-right: 0;
+  }
+  .icons__list {
+    margin-top: 40px;
+  }
+  .author__name {
+    font-size: 24px;
+  }
+  .author__info {
+    padding: 20px;
+  }
+  .author__slider {
+    height: 300px;
+  }
+  .client__item {
+    width: 200px;
+    max-width: 100%;
+  }
+  .lesson__btn {
+    padding: 20px;
+    padding-right: 50px;
+    font-size: 20px;
+    
+    &::after {
+      top: 25px;
+      right: 20px;
+    }
+  }
+  .lesson__sublist {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .client__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .author__btn {
+    width: 100%;
+    padding-left: 40px;
+  }
+  .author__img,
+  .author__info {
+    width: 100%;
+  }
+  .author__slider {
+    height: 250px;
+  }
+  .promo__video a,
+  .study__item {
+    height: 185px;
+  }
+  .nav__list {
+    display: block;
+  }
+  .nav__item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .nav__item:active::after,
+  .nav__item:hover::after {
+    display: none;
+  }
+}
